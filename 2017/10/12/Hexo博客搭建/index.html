@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Hexo博客搭建 | 李明阳の幻想乡</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Hexo博客搭建</h1><a id="logo" href="/.">李明阳の幻想乡</a><p class="description">boy ♂ next ♂ door</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Hexo博客搭建</h1><div class="post-meta">Oct 12, 2017<span> | </span><span class="category"><a href="/categories/hexo/">hexo</a></span></div><div class="post-content"><ul>
+<li>这里只讲解关于hexo相关配置过程，关于git及github相关内容在此不做讲解</li>
+</ul>
+<h3 id="官方文档-Hexo"><a href="#官方文档-Hexo" class="headerlink" title="官方文档|Hexo"></a><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官方文档|Hexo</a></h3><h3 id="主要命令"><a href="#主要命令" class="headerlink" title="主要命令"></a>主要命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">创建文章</div><div class="line">hexo new 技术文章</div><div class="line"></div><div class="line">启动本地服务器(默认地址:localhost:4000)</div><div class="line">hexo s</div><div class="line"></div><div class="line">生成静态文件并部署(至github)</div><div class="line">hexo g -d</div></pre></td></tr></table></figure>
+<h3 id="详细步骤"><a href="#详细步骤" class="headerlink" title="详细步骤"></a>详细步骤</h3><ol>
+<li><p>下载安装Node.js</p>
+<ul>
+<li>地址：<a href=""></a><a href="http://nodejs.cn/download/" target="_blank" rel="external">http://nodejs.cn/download/</a></li>
+<li><p>安装完成后在命令行中查看是否成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node -v</div></pre></td></tr></table></figure>
+</li>
+<li><p>如果出现不是内部或外部命令的错误<br>请进入计算机的环境变量配置中，在Path中重新设置node.js的路径</p>
+</li>
+</ul>
+</li>
+<li><p>npm设置<a href="https://npm.taobao.org/" target="_blank" rel="external">淘宝NPM镜像</a>，来提高下载速度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装Hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p>安装完成后查看是否成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo -v</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装完成后我们就可以创建一个博客了</p>
+<ul>
+<li>首先创建一个空文件夹，名字自定义，但必须保证文件夹中没有任何文件</li>
+<li><p>以命令行进入该文件夹，输入命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
+</li>
+<li><p>成功后，一个基本的blog便搭建完成</p>
+</li>
+<li>关于配置文件及主题相关<ul>
+<li>在我们主目录下的_config.yml文件，一般称之为站点配置文件<br>里面包含了站点相关信息</li>
+<li>主目录下的themes文件夹中，是站点的主题<br>我们可以自行在网络上找一些自己喜欢的主题，将对应的文件夹放在themes下<br>然后在站点配置文件中将theme字段对应的值修改为你的主题即可(一般就是该主题文件夹的名字)</li>
+<li>每一个主题都有自己的配置文件，在该主题目录下的_config.yml文件。<br>有时候该文件可能不叫_config.yml，那么我们需要手动修改至_config.yml<br>因为配置文件的名字必须是”_config.yml”，否则启动hexo会报错</li>
+</ul>
+</li>
+<li><p>我们可以使用如下命令对hexo进行操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">创建一个博文：</div><div class="line">hexo new 这里是你的博文名字</div><div class="line"></div><div class="line">在本地启动hexo：</div><div class="line">hexo s</div><div class="line"></div><div class="line">清理hexo(当我们修改主题，或是站点配置文件时需要执行)：</div><div class="line">hexo clean</div></pre></td></tr></table></figure>
+</li>
+<li><p>其他操作请参考文档：<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">文档|Hexo</a></p>
+</li>
+</ul>
+</li>
+<li><p>hexo与github关联</p>
+<ul>
+<li><p>hexo站点配置文件</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr"> type:</span> <span class="string">git</span></div><div class="line"><span class="attr"> repo:</span> <span class="string">项目地址</span></div><div class="line"><span class="attr"> branch:</span> <span class="string">master</span></div></pre></td></tr></table></figure>
+<p><strong>项目地址为SSH地址,关于SSH如何配置请看<a href="/2017/10/12/Git本地仓库的创建及关联远程仓库/">git相关文章</a></strong></p>
+</li>
+</ul>
+<ul>
+<li>github项目设置<ul>
+<li>项目名必须为github用户名.github.io(如：LengM.github.io)</li>
+<li>项目Setting-GitHub Pages-Source中设置分支为master分支</li>
+<li>保存后在GitHub Pages下方会显示一个地址，访问改地址即可</li>
+<li>关于自定义域名<ul>
+<li>首先有一个自己管理的域名，该域名指向项目的默认地址</li>
+<li>在Setting-GitHub Pages-Custom domain填写为自己的域名<p></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>安装git deploy模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>将Hexo上传到github以访问</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="一些优秀的主题"><a href="#一些优秀的主题" class="headerlink" title="一些优秀的主题"></a>一些优秀的主题</h3><ul>
+<li><p>maupassant(当前主题)</p>
+<ul>
+<li><a href="https://github.com/tufu9441/maupassant-hexo" target="_blank" rel="external">GitHub</a></li>
+<li><a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="external">中文文档</a></li>
+<li>安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant</div><div class="line">$ npm install hexo-renderer-jade@0.3.0 --save</div><div class="line">$ npm install hexo-renderer-sass --save</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+</li>
+<li>NexT<ul>
+<li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">GitHub</a></li>
+<li><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">中文文档</a></li>
+</ul>
+<hr>
+</li>
+<li>Material(卡片风格)<ul>
+<li><a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="external">GitHub</a></li>
+<li><a href="https://material.viosey.com/docs/#/" target="_blank" rel="external">中文文档</a></li>
+</ul>
+</li>
+</ul>
+<p><br><br>End</p>
+</div><div class="tags"><a href="/tags/技术/">技术</a></div><div class="post-nav"><a href="/2017/10/12/Git本地仓库的创建及关联远程仓库/" class="pre">Git本地仓库的创建及关联远程仓库</a><a href="/2017/10/11/Android笔记/" class="next">Android笔记</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo博客相关/">hexo博客相关</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/技术/" style="font-size: 15px;">技术</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/12/Git本地仓库的创建及关联远程仓库/">Git本地仓库的创建及关联远程仓库</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/12/Hexo博客搭建/">Hexo博客搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/11/Android笔记/">Android笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/11/更换电脑-如何继续写博客/">更换电脑,如何继续写博客</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.zhihu.com" title="知乎" target="_blank">知乎</a><ul></ul><a href="https://github.com" title="github" target="_blank">github</a><ul></ul><a href="http://www.jianshu.com/" title="简书" target="_blank">简书</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">李明阳の幻想乡.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css"><script type="text/javascript" color="0,0,0" opacity="0.5" zIndex="-2" count="50" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
