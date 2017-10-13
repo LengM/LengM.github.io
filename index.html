@@ -361,25 +361,14 @@
 
       
         
-          
-            <p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">官方文档</a></p>
-<h2 id="更换主题背景图片"><a href="#更换主题背景图片" class="headerlink" title="更换主题背景图片"></a>更换主题背景图片</h2><ul>
-<li>进入next\source\css_custom目录下</li>
-<li>修改custom.styl文件，添加如下代码即可<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="comment">// 设置背景图片</span></div><div class="line">  <span class="attribute">background</span>:url(http://oxneouni2.bkt.clouddn.com/ChMkJlbKwvKIHVsFAASBnZp6iE8AALGvgEmI8oABIG1624.jpg);</div><div class="line">  <span class="comment">// 设置背景图片不随页面滚动</span></div><div class="line">  <span class="attribute">background-attachment</span>: fixed;</div><div class="line">  <span class="comment">// 设置背景图片不重复显示</span></div><div class="line">  <span class="attribute">background-repeat</span>: no-repeat;</div><div class="line">  <span class="comment">// 设置背景图片占满屏幕</span></div><div class="line">  <span class="attribute">background-size</span>:<span class="number">100%</span> auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="修改Gemini外观下卡片风格"><a href="#修改Gemini外观下卡片风格" class="headerlink" title="修改Gemini外观下卡片风格"></a>修改Gemini外观下卡片风格</h2><ul>
-<li>进入next\source\css_schemes目录，该目录中包含了不同外观独有的样式</li>
-<li>我们这里要修改的就是Gemini外观独有的，每一个文章都用一个”卡片”装载，在这里我想要将卡片设置为圆角</li>
-<li><p>进入到_schemes\Gemini目录下，打开目录下的文件，找到.post-block相关的设置</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Post &amp; Comments blocks.</span></div><div class="line"><span class="selector-class">.post-block</span> &#123;</div><div class="line">  <span class="attribute">margin-top</span>: <span class="number">10px</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="variable">$content</span>-desktop-padding;</div><div class="line">  <span class="attribute">background</span>: white;</div><div class="line">  <span class="attribute">box-shadow</span>: <span class="variable">$box</span>-shadow-inner;</div><div class="line">  <span class="attribute">border-radius</span>: <span class="variable">$border</span>-radius-inner;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// When blocks are siblings (homepage).</span></div><div class="line"><span class="selector-id">#posts</span> &gt; <span class="selector-tag">article</span> + <span class="selector-tag">article</span> &#123;</div><div class="line">  <span class="selector-class">.post-block</span> &#123;</div><div class="line">    <span class="attribute">margin-top</span>: sboffset;</div><div class="line">    <span class="comment">// Rewrite shadows &amp; borders because all blocks have offsets.</span></div><div class="line">    <span class="attribute">box-shadow</span>: <span class="variable">$box</span>-shadow;</div><div class="line">    <span class="attribute">border-radius</span>: <span class="variable">$border</span>-radius;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>找到了对应的样式设置方式，我们回到_custom目录下修改自定义样式文件，添加如下代码，即可将卡片设置为圆角</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.post-block</span> &#123;</div><div class="line">  <span class="comment">// 设置圆角弧度</span></div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span>;</div><div class="line">  <span class="comment">// 设置外上边距</span></div><div class="line">  <span class="attribute">margin-top</span>: <span class="number">10px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#posts</span> &gt; <span class="selector-tag">article</span> + <span class="selector-tag">article</span> &#123;</div><div class="line">  <span class="selector-class">.post-block</span> &#123;</div><div class="line">    <span class="attribute">border-radius</span>: <span class="number">10px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-
-          
+          <p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">官方文档</a><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/10/13/NexT主题使用/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
