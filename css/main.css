@@ -1823,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a3ff2a;
+  background: #ffe39d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3123,8 +3123,9 @@ pre .javascript .function {
   }
 }
 body {
-  background: url("http://oxneouni2.bkt.clouddn.com/SoftPurple.jpg");
+  background: url("http://oxneouni2.bkt.clouddn.com/1fb082d2a78598e1aa09d50e9c7a434c_2_2_art.png");
   background-attachment: fixed;
+  background-size: 100% auto;
 }
 .post-block {
   border-radius: 10px;
@@ -3138,4 +3139,11 @@ body {
 }
 .sidebar-inner.affix-bottom {
   border-radius: 10px;
+}
+.site-meta,
+.headband {
+  background: url("http://oxneouni2.bkt.clouddn.com/bg.png");
+}
+.footer {
+  color: #fff;
 }
