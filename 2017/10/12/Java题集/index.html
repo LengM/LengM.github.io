@@ -84,10 +84,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java题集">
 <meta property="og:url" content="http://yoursite.com/2017/10/12/Java题集/index.html">
-<meta property="og:site_name" content="李明阳的幻想乡">
+<meta property="og:site_name" content="My Project">
 <meta property="og:description" content="名词 localStorage Executors TDD  浅谈测试驱动开发  学习TDD：TDD的好处 Redis IOC">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-13T06:02:38.000Z">
+<meta property="og:updated_time" content="2017-10-16T07:09:17.116Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java题集">
 <meta name="twitter:description" content="名词 localStorage Executors TDD  浅谈测试驱动开发  学习TDD：TDD的好处 Redis IOC">
@@ -126,7 +126,7 @@
 
 
 
-  <title>Java题集 | 李明阳的幻想乡</title>
+  <title>Java题集 | My Project</title>
   
 
 
@@ -170,12 +170,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">李明阳的幻想乡</span>
+        <span class="site-title">My Project</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">EVOLUTION</p>
+        <p class="site-subtitle">BRIGHT & LENGM</p>
       
   </div>
 
@@ -331,7 +331,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="李明阳的幻想乡">
+      <meta itemprop="name" content="My Project">
     </span>
 
     
@@ -436,6 +436,8 @@
 <p><del><strong>我的解决方法</strong></del>：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> String <span class="title">sumNum</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (i &lt; <span class="number">0</span>) &#123;</div><div class="line">        <span class="keyword">return</span> i + <span class="string">" &lt; 0"</span>;</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (i == <span class="number">0</span>) &#123;</div><div class="line">        <span class="keyword">return</span> i + <span class="string">" = 0"</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">        StringBuilder sout = <span class="keyword">new</span> StringBuilder();</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= i; j++) &#123;</div><div class="line">            sum += j;</div><div class="line">            sout.append(j).append(<span class="string">"+"</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> sout.toString().substring(<span class="number">0</span>, sout.length() - <span class="number">1</span>) + <span class="string">" = "</span> + sum;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>一开始自己选择循环变量从0开始，也是陷入了输出结果的误区（从0开始，在其后面拼接+号），在拼接字符串时最后就会多出一个+号，需要手动截取字符串，变得很麻烦<br><strong>优化后更好的解决方法</strong>：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> String <span class="title">sumNum</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (i &lt; <span class="number">0</span>) &#123;</div><div class="line">        <span class="keyword">return</span> i + <span class="string">" &lt; 0"</span>;</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (i == <span class="number">0</span>) &#123;</div><div class="line">        <span class="keyword">return</span> i + <span class="string">" = 0"</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</div><div class="line">        StringBuilder sb = <span class="keyword">new</span> StringBuilder(<span class="string">"0"</span>);</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= i; j++) &#123;</div><div class="line">            sum += j;</div><div class="line">            sb.append(<span class="string">"+"</span>).append(j);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> sb.append(<span class="string">"="</span>).append(sum).toString();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>优化之后，我们将返回的字符串默认值为0，这样我们的循环变量从1开始，只需要在其前面拼接+号即可，这样就会避免多出+号的问题了。</p>
+<h3 id="替换空格"><a href="#替换空格" class="headerlink" title="替换空格"></a>替换空格</h3><p>实现以下函数，将一个字符串中的空格替换为%20<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace</span><span class="params">(StringBuffer str)</span></span>&#123;</div><div class="line">  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>解题思路：由于传入参数是StringBuffer，而StringBuffer并没有可以直接替换某个字符的方法，所以我们需要先将StringBuffer转换为String，调研String的replace方法即可<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace</span><span class="params">(StringBuffer str)</span></span>&#123;</div><div class="line">  <span class="keyword">return</span> str.toString().replace(<span class="string">" "</span>,<span class="string">"%20"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -684,7 +686,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#名词"><span class="nav-text">名词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同"><span class="nav-text">软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能"><span class="nav-text">冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给定一个数字，计算出从0开始到该数字内所有数字之和。"><span class="nav-text">给定一个数字，计算出从0开始到该数字内所有数字之和。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#名词"><span class="nav-text">名词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同"><span class="nav-text">软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能"><span class="nav-text">冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给定一个数字，计算出从0开始到该数字内所有数字之和。"><span class="nav-text">给定一个数字，计算出从0开始到该数字内所有数字之和。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换空格"><span class="nav-text">替换空格</span></a></li></ol></div>
             
 
           </div>
