@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Vim使用文档]]></title>
+    <url>%2F2017%2F10%2F16%2FVim%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%2F</url>
+    <content type="text"><![CDATA[Vim命令 命令 描述 :w 保存 :w newName 另存为newName :q 退出:wq：保存并退出:q!：不保存修改直接退出 i 进入编辑模式 Esc 退出编辑模式 u 撤回 . 重复前一个操作 :set nu 显示行号 :set nonu 取消行号 gg 移动到文档开头 G 移动到文档结尾 nG 移动到第n行 n空格 光标向右移动n个字符 n回车 光标向下移动n行 yy 复制光标所在行 nyy 复制从光标所在行向下的n行 p 小写，粘贴至光标之后 P 大写，粘贴至光标之前 x 小写，删除光标之后的一个字符 X 大写，删除光标之前的一个字符 dd 剪切光标所在行 ndd 剪切光标所在行向下的n行 /内容 搜索 %s///g 替换操作s代表每行第一个，g代表每行所有，%代表所有行^代表开头，$代表结尾:%s/^/select/g：在每行最开始添加select:11,$s/a/b/：把11行至最后一行中，每行的第一个a替换为b:1,6s/a/b/g：把第1行至第6行中所有的a替换为b:%s/a/b/g：将所有的a替换为b]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[IDEA使用]]></title>
     <url>%2F2017%2F10%2F16%2FIDEA%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[一些快捷键 Alt+Shift+m：将选中的代码封装为一个方法 Ctrl+Alt+t：生成if、for等一系列方法 Ctrl+Shift+u：一键大小 设置类注释模板 Setting-Editor-File and Code Templates 选择Includes标签，修改File Header中的内容，建议使用以下模板12345/** * * @author $&#123;USER&#125; * @date $&#123;DATE&#125; */ 添加插件 Setting-Plugins 一共有三种添加方式 Install JetBrains plugin…：添加IDEA官方插件 Browse repositories…：从仓库添加 Install plugin from disk…：从本地安装插件 推荐插件 Alibaba Java Coding Guidelines：阿里巴巴Java开发规约，实时监测、全局检测安装后直接在代码中右键，或在Tools中即可找到 GsonFormat：json自动生成Bean安装后在Code-Generate中即可使用 Eclipse Code Formatter：代码格式化，可以添加Eclipse代码模板文件安装后在Setting中即可找到]]></content>
@@ -88,7 +99,7 @@
   <entry>
     <title><![CDATA[Markdown的使用]]></title>
     <url>%2F2017%2F10%2F13%2FMarkdown%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
-    <content type="text"><![CDATA[Markdown使用语法官方中文版 标题123456# 标题1## 标题2### 标题3#### 标题4##### 标题5###### 标题6 标题会在文章目录中显示 分割线123***或--- 无序列表（可嵌套）1234567891011* 内容* 内容* 内容或- 内容- 内容- 内容或+ 内容+ 内容+ 内容 内容 内容 内容 有序列表（序号自动）1231. 内容1. 内容1. 内容 内容 内容 内容写的时候序号可以随意写但不能不写,且只能为数字 页内跳转12345先定义一个锚(id)&lt;span id="title"/&gt;然后使用语法[跳转到标题](#title) 跳转到标题 文字样式123456789101112131415**这是粗体字**或__这是粗体字__*这是斜体字*或_这是斜体字_~~这是删除线~~&lt;u&gt;这是下划线&lt;/u&gt;&lt;font face="STCAIYUN"&gt;这是华文彩云&lt;/font&gt;&lt;font size=10&gt;这个字的大小是10&lt;/font&gt;&lt;font color=red&gt;这个字的颜色是红色&lt;/font&gt; 这是粗体字这是斜体字这是删除线这是下划线 这是华文彩云这个字的大小是10这个字的颜色是红色 引用12&gt; 这是引用&gt;&gt; 这是二级引用 这是引用 这是二级引用 链接1234必须带有http开头&lt;http://www.baidu.com&gt;[七牛云存储](https://portal.qiniu.com/) http://www.baidu.com七牛云存储 图片1234![萌萌哒](https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/e1fe9925bc315c601a9232a98cb1cb1349547774.jpg)使用html可以自定义样式&lt;img src="https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/e1fe9925bc315c601a9232a98cb1cb1349547774.jpg" width="100"/&gt; 表格1234567891011|姓名 |年龄||--------|----||李佳芮 |16 ||李先兔 |14 |也可以|姓名|年龄||-|-||李佳芮|16||李先兔|14| 姓名 年龄 李佳芮 16 李先兔 14 格式可以不需要对齐，但对齐方便观看 代码块123456```java//这里是代码 int i = (int) (Math.random() * 10);也可以使用``标记一小段代码`String`是引用类型``` 12//这里是代码 int i = (int) (Math.random() * 10); String是引用类型]]></content>
+    <content type="text"><![CDATA[Markdown使用语法官方中文版 标题123456# 标题1## 标题2### 标题3#### 标题4##### 标题5###### 标题6 标题会在文章目录中显示 分割线123***或--- 无序列表（可嵌套）1234567891011* 内容* 内容* 内容或- 内容- 内容- 内容或+ 内容+ 内容+ 内容 内容 内容 内容 有序列表（序号自动）1231. 内容1. 内容1. 内容 内容 内容 内容写的时候序号可以随意写但不能不写,且只能为数字 页内跳转12345先定义一个锚(id)&lt;span id="title"/&gt;然后使用语法[跳转到标题](#title) 跳转到标题 文字样式123456789101112131415**这是粗体字**或__这是粗体字__*这是斜体字*或_这是斜体字_~~这是删除线~~&lt;u&gt;这是下划线&lt;/u&gt;&lt;font face="STCAIYUN"&gt;这是华文彩云&lt;/font&gt;&lt;font size=10&gt;这个字的大小是10&lt;/font&gt;&lt;font color=red&gt;这个字的颜色是红色&lt;/font&gt; 这是粗体字这是斜体字这是删除线这是下划线 这是华文彩云这个字的大小是10这个字的颜色是红色 引用12&gt; 这是引用&gt;&gt; 这是二级引用 这是引用 这是二级引用 链接1234必须带有http开头&lt;http://www.baidu.com&gt;[七牛云存储](https://portal.qiniu.com/) http://www.baidu.com七牛云存储 图片1234![萌萌哒](https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/e1fe9925bc315c601a9232a98cb1cb1349547774.jpg)使用html可以自定义样式&lt;img src="https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/e1fe9925bc315c601a9232a98cb1cb1349547774.jpg" width="100"/&gt; 表格1234567891011|姓名 |年龄||--------|----||李佳芮 |16 ||李先兔 |14 |也可以|姓名|年龄||-|-||李佳芮|16||李先兔|14| 姓名 年龄 李佳芮 16 李先兔 14 格式可以不需要对齐，但对齐方便观看 表格内换行：使用标签即可 代码块123456```java//这里是代码 int i = (int) (Math.random() * 10);也可以使用``标记一小段代码`String`是引用类型``` 12//这里是代码 int i = (int) (Math.random() * 10); String是引用类型]]></content>
       <categories>
         <category>技术</category>
       </categories>
