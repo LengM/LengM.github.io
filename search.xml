@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[IDEA使用]]></title>
+    <url>%2F2017%2F10%2F16%2FIDEA%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[一些快捷键 Alt+Shift+m：将选中的代码封装为一个方法 Ctrl+Alt+t：生成if、for等一系列方法 Ctrl+Shift+u：一键大小 设置类注释模板 Setting-Editor-File and Code Templates 选择Includes标签，修改File Header中的内容，建议使用以下模板12345/** * * @author $&#123;USER&#125; * @date $&#123;DATE&#125; */ 添加插件 Setting-Plugins 一共有三种添加方式 Install JetBrains plugin…：添加IDEA官方插件 Browse repositories…：从仓库添加 Install plugin from disk…：从本地安装插件 推荐插件 Alibaba Java Coding Guidelines：阿里巴巴Java开发规约，实时监测、全局检测安装后直接在代码中右键，或在Tools中即可找到 GsonFormat：json自动生成Bean安装后在Code-Generate中即可使用 Eclipse Code Formatter：代码格式化，可以添加Eclipse代码模板文件安装后在Setting中即可找到]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[燃烧的少年]]></title>
+    <url>%2F2017%2F10%2F15%2F%E7%87%83%E7%83%A7%E7%9A%84%E5%B0%91%E5%B9%B4%2F</url>
+    <content type="text"><![CDATA[送给孤单的你 人生就像刮彩票 为什么我爱的人才是我的疼呢？ 枫叶的颜色是火的颜色，它在凋落时才会燃烧。这是情感最后的绽放 天已经太灰了，雨要来了。 你是我体内仅剩的余温 我们各自的人生只有我们各自才懂 我们身处的这个世界，是天堂还是地狱，其实是你说了算 “幸福”这两个字的笔画，在你的名字里都找得到 我相信我会越来越幸福，虽然注定不幸 天空没有眼睛，天空没有耳朵，至少天空依然清澈 过去了的，别再过来 你只是来错了地方，遇错了人因为我来错了地方却遇对了人 谁将光明涂抹成黑暗 你跌倒是为了让我站起来 你的时间终止，可我的还要继续 生命不会化为灰烬，以及悲剧总要三缺一 我们将地狱变成天堂 孤独的，永远只是我的身体 最后，我们留住了时间 ———— 选自：李枫《燃烧的男孩》]]></content>
+      <categories>
+        <category>人生</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[七牛云上传大文件的方式]]></title>
+    <url>%2F2017%2F10%2F15%2F%E4%B8%83%E7%89%9B%E4%BA%91%E4%B8%8A%E4%BC%A0%E5%A4%A7%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[最近在使用hexo搭建博客，一些图片资源需要有图片地址，所以就根据网上的推荐使用了七牛云存储后来想添加一些视频或音乐类的博文，想使用Hexo的插件进行播放，就需要自己有视频音乐文件的地址所以用到七牛云的大文件上传 这里使用的是命令行工具 首先下载命令文件（下载win64位） 安装命令 首先最好将下载下来的文件修改名字为qshell.exe 如果你不修改那么你的命令就必须是 1qshell-windows-x64 accout ak sk 而官方给出的命令是这样的 1qshell account ak sk 因为这个我之前不清楚所以浪费了好长时间才搞懂。命令的前缀和文件名是一样的才可以 关于命令的使用，我们可以在环境变量的path属性中将我们命令文件所在的文件夹路径添加进去（全局）也可以只在命令文件所在文件夹中使用该命令 设置用户 1qshell account AccessKey SecretKey 上传文件 1qshell rput &lt;Bucket&gt; &lt;Key&gt; &lt;LocalFile&gt; Bucket：七牛空间名称 Key：文件保存在七牛空间的名称 LocalFile：本地文件的路径 其他详细内容参照 官方文档]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>七牛云存储</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo添加视频音乐]]></title>
+    <url>%2F2017%2F10%2F14%2FHexo%E6%B7%BB%E5%8A%A0%E8%A7%86%E9%A2%91%E9%9F%B3%E4%B9%90%2F</url>
+    <content type="text"><![CDATA[Hexo插件： 音乐播放器shexo-tag-aplayer:https://github.com/grzhan/hexo-tag-aplayer#upstream-issue视频播放器hexo-tag-dplayer:https://github.com/NextMoe/hexo-tag-dplayer 通过html标签(分享其他网站的视频音乐)1234567891011121314151617181920爱奇艺视频：&lt;embed src="http://player.video.qiyi.com/e393235b5561650570d623eb68e4e144/0/0/w_19rt2h565d.swf-albumId=5806903309-tvId=5806903309-isPurchase=0-cnId=5" allowFullScreen="true" quality="high" width="780" height="550" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"&gt;&lt;/embed&gt;网易云音乐：&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&amp;id=490106148&amp;auto=0&amp;height=66"&gt;&lt;/iframe&gt; 爱奇艺视频： 网易云音乐：]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Taylor Swift 2015 1989 World Tour]]></title>
+    <url>%2F2017%2F10%2F14%2FTaylor-Swift-2015-1989-World-Tour%2F</url>
+    <content type="text"><![CDATA[转自bilibili，原视频地址var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"video":{"url":"http://oxneouni2.bkt.clouddn.com/Taylor-Swift-1989-World-Tour.mp4"}});]]></content>
+      <categories>
+        <category>音乐</category>
+      </categories>
+      <tags>
+        <tag>Taylor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[NexT主题使用]]></title>
+    <url>%2F2017%2F10%2F13%2FNexT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[官方文档 更换主题背景图片 进入next\source\css_custom目录下 修改custom.styl文件，添加如下代码即可12345678910body &#123; // 设置背景图片 background:url(http://oxneouni2.bkt.clouddn.com/ChMkJlbKwvKIHVsFAASBnZp6iE8AALGvgEmI8oABIG1624.jpg); // 设置背景图片不随页面滚动 background-attachment: fixed; // 设置背景图片不重复显示 background-repeat: no-repeat; // 设置背景图片占满屏幕 background-size:100% auto;&#125; 修改Gemini外观下卡片风格 进入next\source\css_schemes目录，该目录中包含了不同外观独有的样式 我们这里要修改的就是Gemini外观独有的，每一个文章都用一个”卡片”装载，在这里我想要将卡片设置为圆角 进入到_schemes\Gemini目录下，打开目录下的文件，找到.post-block相关的设置 123456789101112131415161718// Post &amp; Comments blocks..post-block &#123; margin-top: 10px; padding: $content-desktop-padding; background: white; box-shadow: $box-shadow-inner; border-radius: $border-radius-inner;&#125;// When blocks are siblings (homepage).#posts &gt; article + article &#123; .post-block &#123; margin-top: sboffset; // Rewrite shadows &amp; borders because all blocks have offsets. box-shadow: $box-shadow; border-radius: $border-radius; &#125;&#125; 找到了对应的样式设置方式，我们回到_custom目录下修改自定义样式文件，添加如下代码，即可将卡片设置为圆角 1234567891011.post-block &#123; // 设置圆角弧度 border-radius: 10px; // 设置外上边距 margin-top: 10px;&#125;#posts &gt; article + article &#123; .post-block &#123; border-radius: 10px; &#125;&#125; 在NexT主题上添加一个flash小游戏 进入next\layout中，打开_layout.swig添加如下代码 12345678910&lt;object type="application/x-shockwave-flash" style="outline:none;position: absolute;position: fixed;right: 0;bottom:0;margin-bottom: 80px;margin-right:5px;" data="http://cdn.abowman.com/widgets/hamster/hamster.swf?" width="180" height="140" id="__wow_video_player__463292481" title="Adobe Flash Player"&gt; &lt;param name="movie" value="http://cdn.abowman.com/widgets/hamster/hamster.swf?"&gt; &lt;param name="AllowScriptAccess" value="always"&gt; &lt;param name="wmode" value="opaque"&gt;&lt;/object&gt; 代码最好添加在body中的header后面 style属性可以自定义 添加本地搜索 安装hexo-generator-searchdb，在站点根目录下执行以下命令 1npm install hexo-generator-searchdb --save 编辑站点配置文件，新增以下内容至任意位置 12345search: path: search.xml field: post format: html limit: 10000 编辑主题配置文件，启用本地搜索 123# Local searchlocal_search: enable: true 其他搜索参见官方文档 返回顶部按钮 添加进度提示：修改主题配置文件的以下字段1scrollpercent: true]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[知乎上45个神回复]]></title>
+    <url>%2F2017%2F10%2F13%2F%E7%9F%A5%E4%B9%8E%E4%B8%8A45%E4%B8%AA%E7%A5%9E%E5%9B%9E%E5%A4%8D%2F</url>
+    <content type="text"><![CDATA[哪些行为是浪费时间？ 思而不学＋犹豫不决 王阳明的“知行合一”到底如何理解？又怎样运用到实际生活中？ 知道做不到， 等于不知道。 情商不高的例子有哪些？ 对陌生人毕恭毕敬 对亲近的人随意发怒 交朋友的标准是什么？ 出世的智者， 入世的强者， 或者正常而阳光的普通人。 “别让孩子输在起跑线上”有道理吗？ 一辈子都要和别人去比较， 是人生悲剧的源头。 做哪些事情可以提升生活品质？ 定期扔东西。 结婚以后两个人在一起最重要的是什么？ 就当这婚还没结。 把学费拿来念书还是环游世界更合适？为什么？ 在没有充分的知识作为前提的情况下， 即使行了万里路， 也不过是邮差而已。 是不是一个人越成熟就越难爱上一个人？ 不是越成熟越难爱上一个人。 是越成熟， 越能分辨那是不是爱。 你对自由的理解是什么？ 说“不”的能力。 你是如何走出人生的阴霾的？ 多走几步。 哪些技能，经较短时间的学习，就可以给人的生活带来巨大帮助？ 夸奖他人。 苦难有什么价值？ 永远不要相信苦难是值得的， 苦难就是苦难， 苦难不会带来成功。 苦难不值得追求， 磨练意志是因为苦难无法躲开。 要怎样努力，才能成为很厉害的人？ 如果你注定要成为厉害的人， 那问题的答案就深藏在你的血脉里； 如果你注定不是厉害的人， 那你便只需要做好你自己。 你在生活中得到过的最好的建议是什么？ “过度自我关注是万恶之源”、 “永远不要为尚未发生的事儿拧巴”、 “觉得为时已晚，恰恰是最早的时候”。 前半生与后半生的分界线是在哪里？ 此时此刻。 同样是别人比自己强，为什么有时会产生嫉妒心理，而有时会产生崇拜？ 远的崇拜，近的嫉妒； 够不着的崇拜，够得着的嫉妒； 有利益冲突的嫉妒，没利益冲突的崇拜。 如何让这个世界变得美好？ 把你自己变得更美好。 二十六岁，工作三年却将留学三年，值得吗？ 普通玩家选择标准配置， 高端玩家选择自定义配置。 世界上有那么多好书好电影注定看不完，我们对这个事实该持何种态度？ 怕什么真理无穷， 进一寸有一寸的欢喜。 —— 胡适 听过最落寞的一句话或诗句是什么？ 不如意事常八九， 可与言者无二三。 人这一生为什么要努力？ 最痛苦的事，不是失败， 是我本可以。 省钱的好办法有哪些？ 在买任何东西之前牢记九字箴言： 你喜欢，你需要，你适合。 PS：适用于很多事，包括感情也一样。 科学和迷信的分界点是哪里？ “我错了。” 如果好人不一定得到好报，那我们为什么还要做好事？ 我们坚持一件事情， 并不是因为这样做了会有效果， 而是坚信，这样做是对的。 —— 哈维尔 如何看待“年轻的时候需要的是朋友而不是人脉”？ 没有目的之交往， 才能感动人。 有哪些道理是你读了不信、听不进去，直到你亲身经历方笃信不疑的？ 不要低估你的能力， 不要高估你的毅力。 怎么看待励志的书籍？ 看再多， 那都是别人的人生。 你心中的完美爱情是怎么样的？ 可以有不完美。 什么叫见过大世面？ 能享受最好的， 能承受最坏的。 为什么当看到好照片时人们通常的反应是“真不错，你用的是什么相机”当看到烂照片时，则往往笑话拍摄者水平很臭？ 人习惯性地 将自己的成功归因于自身， 失败归因于环境； 而将他人的成功归因于环境， 失败归因于其自身。 如何反驳“现实点，这个社会就是这样”？ “你是怎样，你的世界就是怎样。” 恋爱半年，女朋友觉得没有了开始时的新鲜感，怎么办？ 所谓新鲜感， 不是和未知的人一起去做同样的事情， 而是和已知的人一起去体验未知的人生。 三十岁才开始学习编程，靠谱吗？ 种一棵树最好的时间是十年前， 其次是现在。 怎样在有效提出推荐或建议的同时，避免给人灌输和强迫的感觉？ 说服他人不要诉诸理性， 应求于利益。 在一个足够小的星球上行走，我们是在上坡还是下坡？ 你感觉累就是上坡， 感觉轻松就是下坡。 你遇到过哪些让你眼前一亮、醍醐灌顶或对你改变很大的理念？ 天赋决定了你能达到的上限， 努力程度决定了你能达到的下限。 以绝大多数人的努力程度之低， 远远没有达到要去拼天赋的地步。 扎克伯格初期是怎么保护Facebook的最初创意？为什么Facebook上线后没被其他大公司抄走? 保护创意的最好方法，就是 —— 将其最好地执行。 如何看待“年轻时就释怀与淡泊，是没有希望的”这句话？ 试图用一句话就来总结复杂的人生， 是没有希望的。 为什么大家都要上大学找工作，而不太喜欢开出租车、开小店、摆街边早餐小吃摊等“短平快”项目？ “孩子，我要求你读书用功，不是因为我要你跟别人比成绩，而是因为，我希望你将来会拥有选择的权利，选择有意义、有时间的工作，而不是被迫谋生。当你的工作在你心中有意义，你就有成就感。当你的工作给你时间，不剥夺你的生活，你就有尊严。成就感和尊严，给你快乐。”—— 龙应台 异国长期生活，改变了你的哪些“是非观”？ 很多事情， 只是不同，并无是非。 向喜欢的女生表白被拒绝了，还是喜欢她，怎么办？ 也许你弄错了什么是表白。 表白应该是最终胜利时的号角， 而不应该是发起进攻的冲锋号。 员工辞职最主要的原因是什么？ 钱少、事多、离家远， 位低、权轻、责任重。 最能燃起你学习激情的一句话是什么？ 你不能把这个世界， 让给你所鄙视的人。 有哪些我们熟知的名言其实还有后半句？ “人是生而自由的” 下一句是： “但无往不在枷锁之中” 再下一句是： “自以为是其他一切主人的人， 反而比其他一切更是奴隶”]]></content>
+      <categories>
+        <category>人生</category>
+      </categories>
+      <tags>
+        <tag>知乎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Windows的使用]]></title>
+    <url>%2F2017%2F10%2F13%2FWindows%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[自动关机命令1shutdown -s -t 7200 取消关机命令 1showdown -a 时间单位为秒 隐藏某文件:1attrib +s +a +h +r d:\demo.jpg +r或-r [文件名] 设置文件属性是否为只读 +h或-h [文件名] 设置文件属性是否隐含 +s或-s [文件名] 设置文件属性是否为系统文件 +a或-a [文件名] 设置文件属性是否为归档文件 windows下安装msi报错（2502、2503） 以管理员身份运行cmd 输入命令1msiexec /package 安装文件的绝对路径]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown的使用]]></title>
+    <url>%2F2017%2F10%2F13%2FMarkdown%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[Markdown使用语法官方中文版 标题123456# 标题1## 标题2### 标题3#### 标题4##### 标题5###### 标题6 标题会在文章目录中显示 分割线123***或--- 无序列表（可嵌套）1234567891011* 内容* 内容* 内容或- 内容- 内容- 内容或+ 内容+ 内容+ 内容 内容 内容 内容 有序列表（序号自动）1231. 内容1. 内容1. 内容 内容 内容 内容写的时候序号可以随意写但不能不写,且只能为数字 页内跳转12345先定义一个锚(id)&lt;span id="title"/&gt;然后使用语法[跳转到标题](#title) 跳转到标题 文字样式123456789101112131415**这是粗体字**或__这是粗体字__*这是斜体字*或_这是斜体字_~~这是删除线~~&lt;u&gt;这是下划线&lt;/u&gt;&lt;font face="STCAIYUN"&gt;这是华文彩云&lt;/font&gt;&lt;font size=10&gt;这个字的大小是10&lt;/font&gt;&lt;font color=red&gt;这个字的颜色是红色&lt;/font&gt; 这是粗体字这是斜体字这是删除线这是下划线 这是华文彩云这个字的大小是10这个字的颜色是红色 引用12&gt; 这是引用&gt;&gt; 这是二级引用 这是引用 这是二级引用 链接1234必须带有http开头&lt;http://www.baidu.com&gt;[七牛云存储](https://portal.qiniu.com/) http://www.baidu.com七牛云存储 图片1234![萌萌哒](https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/e1fe9925bc315c601a9232a98cb1cb1349547774.jpg)使用html可以自定义样式&lt;img src="https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/e1fe9925bc315c601a9232a98cb1cb1349547774.jpg" width="100"/&gt; 表格1234567891011|姓名 |年龄||--------|----||李佳芮 |16 ||李先兔 |14 |也可以|姓名|年龄||-|-||李佳芮|16||李先兔|14| 姓名 年龄 李佳芮 16 李先兔 14 格式可以不需要对齐，但对齐方便观看 代码块123456```java//这里是代码 int i = (int) (Math.random() * 10);也可以使用``标记一小段代码`String`是引用类型``` 12//这里是代码 int i = (int) (Math.random() * 10); String是引用类型]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java题集]]></title>
+    <url>%2F2017%2F10%2F12%2FJava%E9%A2%98%E9%9B%86%2F</url>
+    <content type="text"><![CDATA[名词 localStorage Executors TDD 浅谈测试驱动开发 学习TDD：TDD的好处 Redis IOC 软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同 冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能123456789101112void bubbleSort(int[] a)&#123; // a为需要排序的数组 for (int i = 0; i &lt; a.length - 1; i++) &#123; for (int j = 0; j &lt; a.length - i - 1; j++) &#123; if (a[j] &gt; a[j + 1]) &#123; int t = a[j]; a[j] = a[j + 1]; a[j + 1] = t; &#125; &#125; &#125;&#125; 给定一个数字，计算出从0开始到该数字内所有数字之和。 传入-5,输出-5&lt;0 传入0,输出0=0 传入6,输出0+1+2+3+4+5+6=21 我的解决方法：123456789101112131415private String sumNum(int i) &#123; if (i &lt; 0) &#123; return i + " &lt; 0"; &#125; else if (i == 0) &#123; return i + " = 0"; &#125; else &#123; int sum = 0; StringBuilder sout = new StringBuilder(); for (int j = 0; j &lt;= i; j++) &#123; sum += j; sout.append(j).append("+"); &#125; return sout.toString().substring(0, sout.length() - 1) + " = " + sum; &#125;&#125; 一开始自己选择循环变量从0开始，也是陷入了输出结果的误区（从0开始，在其后面拼接+号），在拼接字符串时最后就会多出一个+号，需要手动截取字符串，变得很麻烦优化后更好的解决方法：123456789101112131415private String sumNum(int i) &#123; if (i &lt; 0) &#123; return i + " &lt; 0"; &#125; else if (i == 0) &#123; return i + " = 0"; &#125; else &#123; int sum = 0; StringBuilder sb = new StringBuilder("0"); for (int j = 1; j &lt;= i; j++) &#123; sum += j; sb.append("+").append(j); &#125; return sb.append("=").append(sum).toString(); &#125;&#125; 优化之后，我们将返回的字符串默认值为0，这样我们的循环变量从1开始，只需要在其前面拼接+号即可，这样就会避免多出+号的问题了。]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git本地仓库的创建及关联远程仓库]]></title>
+    <url>%2F2017%2F10%2F12%2FGit%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA%E5%8F%8A%E5%85%B3%E8%81%94%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[Git仓库 初始化本地仓库1git init 关联远程仓库1git remote add origin git@github.com:xxx/xxxxxxxx.git Git账户配置 查看Git配置 1git config -l 全局配置 12git config --global user.name your_namegit config --global user.email your_email@example.com 私有仓库配置进入仓库目录下执行以下命令 12git config user.name your_namegit config user.email your_email@example.com 在提交时，会优先使用私有仓库的配置 配置SSH连接远程仓库使用SSH连接可以不输入用户名密码直接连接远程仓库 创建密钥 1ssh-keygen -t rsa -C &quot;your_email@example.com&quot; 密钥生成在.ssh文件夹中，有名为”id_rsa”的两个文件 将”id_rsa.pub”中的内容复制到远程仓库个人设置的SSH keys中 配置完成后，项目远程仓库地址即可使用SSH地址 注意：每个电脑只能有一个SSH密钥，多个远程仓库使用一个公钥即可]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo博客搭建]]></title>
+    <url>%2F2017%2F10%2F12%2FHexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[这里只讲解关于hexo相关配置过程，关于git及github相关内容在此不做讲解 官方文档|Hexo 主要命令12345678创建文章hexo new 技术文章启动本地服务器(默认地址:localhost:4000)hexo s生成静态文件并部署(至github)hexo g -d Front-matterhexo创建的每个文章开头以一对---括起的内容 title: 默认即可 date: 默认即可 tags: 标签（需要自己填写） categories: 分类（需要自己填写） 详细步骤 下载安装Node.js 地址：http://nodejs.cn/download/ 安装完成后在命令行中查看是否成功 1node -v 如果出现不是内部或外部命令的错误请进入计算机的环境变量配置中，在Path中重新设置node.js的路径 npm设置淘宝NPM镜像，来提高下载速度 1npm install -g cnpm --registry=https://registry.npm.taobao.org 安装Hexo 1npm install -g hexo-cli 安装完成后查看是否成功 1hexo -v 安装完成后我们就可以创建一个博客了 首先创建一个空文件夹，名字自定义，但必须保证文件夹中没有任何文件 以命令行进入该文件夹，输入命令 1hexo init 成功后，一个基本的blog便搭建完成 关于配置文件及主题相关 在我们主目录下的_config.yml文件，一般称之为站点配置文件里面包含了站点相关信息 主目录下的themes文件夹中，是站点的主题我们可以自行在网络上找一些自己喜欢的主题，将对应的文件夹放在themes下然后在站点配置文件中将theme字段对应的值修改为你的主题即可(一般就是该主题文件夹的名字) 每一个主题都有自己的配置文件，在该主题目录下的_config.yml文件。有时候该文件可能不叫_config.yml，那么我们需要手动修改至_config.yml因为配置文件的名字必须是”_config.yml”，否则启动hexo会报错 我们可以使用如下命令对hexo进行操作 12345678创建一个博文：hexo new 这里是你的博文名字在本地启动hexo：hexo s清理hexo(当我们修改主题，或是站点配置文件时需要执行)：hexo clean 其他操作请参考文档：文档|Hexo hexo与github关联 hexo站点配置文件 1234deploy: type: git repo: 项目地址 branch: master 项目地址为SSH地址,关于SSH如何配置请看git相关文章 github项目设置 项目名必须为github用户名.github.io(如：LengM.github.io) 项目Setting-GitHub Pages-Source中设置分支为master分支 保存后在GitHub Pages下方会显示一个地址，访问改地址即可 关于自定义域名 首先有一个自己管理的域名，该域名指向项目的默认地址 在Setting-GitHub Pages-Custom domain填写为自己的域名 安装git deploy模块 1npm install hexo-deployer-git --save 将Hexo上传到github以访问 1hexo g -d 一些优秀的主题 maupassant GitHub 中文文档 安装123$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant$ npm install hexo-renderer-jade@0.3.0 --save$ npm install hexo-renderer-sass --save NexT(当前主题) GitHub 中文文档 该主题有几种不同风格，查找主题配置文件中scheme字段更换 Material(卡片风格) GitHub 中文文档 该主题安装后不能直接使用， 需要将主题目录下的”_config.template.yaml”文件更名为”_config.yaml” End]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Android笔记]]></title>
+    <url>%2F2017%2F10%2F11%2FAndroid%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[学习Android过程中的一些笔记 TextView粗体1android:textStyle="bold" 关掉所要到的界面中间的activity1intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); LinearLayout点击变换背景颜色123456789android:clickable="true"&lt;itemandroid:drawable="@drawable/register_btn_pressed"android:state_focused="true"/&gt;&lt;itemandroid:drawable="@drawable/register_btn_pressed"android:state_pressed="true"/&gt;&lt;item android:drawable="@drawable/register_btn_normal"/&gt; ListView嵌套ListView,itemClick失效设置父ListView的最外层布局中加入1android:descendantFocusability="blocksDescendants" 取消子ListView控件的焦点12listview.setFocusable(false);listview.setClickable(false); 设置透明度1android:alpha="0.5" 去除Button边框阴影1style="?android:attr/borderlessButtonStyle" 三星机型调用系统相机后，会出现自动旋转照片的问题，详细解决方法https://github.com/LengM/MyApplication/blob/master/app/src/main/java/com/yng/ming/myapplication/util/img/PictureUtil.java 对于开关按钮，不建议设置禁止双击，可能会出现实际状态和按钮状态不符问题singleLine过时替代EditText：12android:inputType="text"android:lines="1" button默认英文大写button将默认英文大写除去1android:textAllCaps="false" 解决ListView的item点击失效问题在Item布局的根布局加上1Android:descendantFocusability=”blocksDescendants” 解决ScrollView嵌套ListView运行后最先显示出来的位置不在顶部而是中间问题1listView.setFocusable(false); 状态栏设置123456789101112// 透明状态栏if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.LOLLIPOP) &#123; Window window = getWindow(); window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION); window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE); window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS); //设置状态栏的颜色 window.setStatusBarColor(Color.BLACK); window.setNavigationBarColor(Color.BLACK);&#125; TextView文字颜色无法设置1getContext().getResources().getColor(textColor) include引入toolbar不显示，或出现空指针情况原因是view值为null，重新给一下值即可123if (null == view) &#123; view = getView();&#125; 设置小键盘回车按钮12android:imeActionLabel="搜索"android:imeOptions="actionSearch" 搭配12et_address.setImeOptions(EditorInfo.IME_ACTION_SEARCH);et_address.setOnEditorActionListener(new TextView.OnEditorActionListener()&#123;&#125;); Android去除EditView自动焦点获取将EditText的父级控设置成12android:focusable="true"android:focusableInTouchMode="true" ImageView图片显示不全可将属性调整如下1android:scaleType="centerCrop" 防止dialog窗体泄露(WindowLeaked)1234567@Overridepublic void onAfter() &#123; super.onAfter(); if (dialog != null &amp;&amp; dialog.isShowing()) &#123; dialog.dismiss(); &#125;&#125; 设置适配屏幕(当自己的标题栏被顶部状态栏覆盖时使用)1android:fitsSystemWindows="true" PullToRefreshListView的layout_width、layout_height属性必须是match_parent，否则数据将无法显示PullToRefreshListView刷新：1onRefreshComplete(); 隐藏软键盘12InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);imm.hideSoftInputFromWindow(editText.getWindowToken(), 0); DatePicker日期控件设置不可输入1android:descendantFocusability="blocksDescendants" 设置按钮不可点击1btn_start.setEnabled(false); 包名与签名包名不一致：系统会认为是个新的软件，这就不算升级了签名不一致：系统会提示先卸载之前安装的版本，才能继续安装新的 小提示框1Toast.makeText(context,"",Toast.LENGTH_SHORT).show(); 启动service1startService(new Intent(DriverActivity.this, LocationService.class)); 使用startService启动的service会无限期运行下去， 只有在外部调用Context的stopService或Service内部调用Service的stopSelf方法时，该Service才会停止运行并销毁 若从图库选择照片错误，路径不对123Intent intent1 = new Intent( Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI); 隐藏EditText中的下划线1android:background="@null" 图片裁剪(在处理相机或相册返回时可以调用)12345678910111213141516public void startCut(Uri path) &#123; Intent intent = new Intent("com.android.camera.action.CROP"); intent.setDataAndType(path, "image/*"); intent.putExtra("crop", "true"); // aspectX aspectY 是宽高的比例 intent.putExtra("aspectX", 4); intent.putExtra("aspectY", 4); // outputX outputY 是裁剪图片宽高 intent.putExtra("outputX", 300); intent.putExtra("outputY", 300); //裁剪完成的图片有可能会出现黑边，添加以下两个参数即可 intent.putExtra("scale", true);//黑边 intent.putExtra("scaleUpIfNeeded", true);//黑边 intent.putExtra("return-data", true); startActivityForResult(intent, PHOTO_CUT_CODE);&#125; 设置TextView显示一行超过部分以..显示123android:ellipsize="marquee"android:maxEms="10"android:lines="1" 设置失效时，原因是超过的首要校验条件是TextView布局的宽度，如果是match_parent并且很宽的话，该效果会“失效” 设置文本2行显示，多出部分省略号12tv_content.setMaxLines(2);tv_content.setEllipsize(TextUtils.TruncateAt.END); 刷新ListView1adapter.notifyDataSetChanged();]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+</search>

@@ -84,10 +84,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android笔记">
 <meta property="og:url" content="http://yoursite.com/2017/10/11/Android笔记/index.html">
-<meta property="og:site_name" content="李明阳の幻想乡">
+<meta property="og:site_name" content="李明阳的幻想乡">
 <meta property="og:description" content="学习Android过程中的一些笔记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-13T04:57:06.000Z">
+<meta property="og:updated_time" content="2017-10-16T02:49:45.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android笔记">
 <meta name="twitter:description" content="学习Android过程中的一些笔记">
@@ -100,7 +100,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.3',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -126,7 +126,7 @@
 
 
 
-  <title>Android笔记 | 李明阳の幻想乡</title>
+  <title>Android笔记 | 李明阳的幻想乡</title>
   
 
 
@@ -170,12 +170,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">李明阳の幻想乡</span>
+        <span class="site-title">李明阳的幻想乡</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">boy ♂ next ♂ door</p>
+        <p class="site-subtitle">EVOLUTION</p>
       
   </div>
 
@@ -246,9 +246,43 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -297,7 +331,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="李明阳の幻想乡">
+      <meta itemprop="name" content="李明阳的幻想乡">
     </span>
 
     
@@ -396,7 +430,6 @@
 <h3 id="设置小键盘回车按钮"><a href="#设置小键盘回车按钮" class="headerlink" title="设置小键盘回车按钮"></a>设置小键盘回车按钮</h3><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">android:</span>imeActionLabel=<span class="string">"搜索"</span></div><div class="line"><span class="symbol">android:</span>imeOptions=<span class="string">"actionSearch"</span></div></pre></td></tr></table></figure>
 <p>搭配<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">et_address</span><span class="selector-class">.setImeOptions</span>(<span class="selector-tag">EditorInfo</span><span class="selector-class">.IME_ACTION_SEARCH</span>);</div><div class="line"><span class="selector-tag">et_address</span><span class="selector-class">.setOnEditorActionListener</span>(<span class="selector-tag">new</span> <span class="selector-tag">TextView</span><span class="selector-class">.OnEditorActionListener</span>()&#123;&#125;);</div></pre></td></tr></table></figure></p>
 <h3 id="Android去除EditView自动焦点获取"><a href="#Android去除EditView自动焦点获取" class="headerlink" title="Android去除EditView自动焦点获取"></a>Android去除EditView自动焦点获取</h3><p>将EditText的父级控设置成<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">android:</span>focusable=<span class="string">"true"</span></div><div class="line"><span class="symbol">android:</span>focusableInTouchMode=<span class="string">"true"</span></div></pre></td></tr></table></figure></p>
-<h3 id="Error-Execution-failed-for-task-‘-student-processDebugManifest’"><a href="#Error-Execution-failed-for-task-‘-student-processDebugManifest’" class="headerlink" title="Error:Execution failed for task ‘:student:processDebugManifest’."></a>Error:Execution failed for task ‘:student:processDebugManifest’.</h3><p>> Manifest merger failed with multiple errors, see logs<br>gradlew processDebugManifest –stacktrace</p>
 <h3 id="ImageView图片显示不全可将属性调整如下"><a href="#ImageView图片显示不全可将属性调整如下" class="headerlink" title="ImageView图片显示不全可将属性调整如下"></a>ImageView图片显示不全可将属性调整如下</h3><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">android:</span>scaleType=<span class="string">"centerCrop"</span></div></pre></td></tr></table></figure>
 <h3 id="防止dialog窗体泄露-WindowLeaked"><a href="#防止dialog窗体泄露-WindowLeaked" class="headerlink" title="防止dialog窗体泄露(WindowLeaked)"></a>防止dialog窗体泄露(WindowLeaked)</h3><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">void</span> <span class="title">onAfter</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>.onAfter();</div><div class="line">    <span class="keyword">if</span> (dialog != <span class="keyword">null</span> &amp;&amp; dialog.isShowing()) &#123;</div><div class="line">        dialog.dismiss();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="设置适配屏幕-当自己的标题栏被顶部状态栏覆盖时使用"><a href="#设置适配屏幕-当自己的标题栏被顶部状态栏覆盖时使用" class="headerlink" title="设置适配屏幕(当自己的标题栏被顶部状态栏覆盖时使用)"></a>设置适配屏幕(当自己的标题栏被顶部状态栏覆盖时使用)</h3><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">android:</span>fitsSystemWindows=<span class="string">"true"</span></div></pre></td></tr></table></figure>
@@ -404,7 +437,7 @@
 <h3 id="隐藏软键盘"><a href="#隐藏软键盘" class="headerlink" title="隐藏软键盘"></a>隐藏软键盘</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">InputMethodManager imm = (InputMethodManager) getSystemService(<span class="built_in">Context</span>.INPUT_METHOD_SERVICE)<span class="comment">;</span></div><div class="line">imm.hideSoftInputFromWindow(editText.getWindowToken(), <span class="number">0</span>)<span class="comment">;</span></div></pre></td></tr></table></figure>
 <h3 id="DatePicker日期控件设置不可输入"><a href="#DatePicker日期控件设置不可输入" class="headerlink" title="DatePicker日期控件设置不可输入"></a>DatePicker日期控件设置不可输入</h3><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">android:</span>descendantFocusability=<span class="string">"blocksDescendants"</span></div></pre></td></tr></table></figure>
 <h3 id="设置按钮不可点击"><a href="#设置按钮不可点击" class="headerlink" title="设置按钮不可点击"></a>设置按钮不可点击</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">btn_start.setEnabled(false)<span class="comment">;</span></div></pre></td></tr></table></figure>
-<h3 id="包名不一致：系统会认为是个新的软件，这就不算升级了"><a href="#包名不一致：系统会认为是个新的软件，这就不算升级了" class="headerlink" title="包名不一致：系统会认为是个新的软件，这就不算升级了"></a>包名不一致：系统会认为是个新的软件，这就不算升级了</h3><p>签名不一致：系统会提示先卸载之前安装的版本，才能继续安装新的</p>
+<h3 id="包名与签名"><a href="#包名与签名" class="headerlink" title="包名与签名"></a>包名与签名</h3><p>包名不一致：系统会认为是个新的软件，这就不算升级了<br>签名不一致：系统会提示先卸载之前安装的版本，才能继续安装新的</p>
 <h3 id="小提示框"><a href="#小提示框" class="headerlink" title="小提示框"></a>小提示框</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">Toast</span><span class="selector-class">.makeText</span>(<span class="selector-tag">context</span>,"",<span class="selector-tag">Toast</span><span class="selector-class">.LENGTH_SHORT</span>)<span class="selector-class">.show</span>();</div></pre></td></tr></table></figure>
 <h3 id="启动service"><a href="#启动service" class="headerlink" title="启动service"></a>启动service</h3><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">startService(<span class="name">new</span> Intent(<span class="name">DriverActivity</span>.this, LocationService.class))<span class="comment">;</span></div></pre></td></tr></table></figure>
 <p>使用startService启动的service会无限期运行下去， 只有在外部调用Context的stopService或Service内部调用Service的stopSelf方法时，该Service才会停止运行并销毁</p>
@@ -412,7 +445,8 @@
 <h3 id="隐藏EditText中的下划线"><a href="#隐藏EditText中的下划线" class="headerlink" title="隐藏EditText中的下划线"></a>隐藏EditText中的下划线</h3><figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">android:<span class="built_in">background</span>=<span class="string">"@null"</span></div></pre></td></tr></table></figure>
 <h3 id="图片裁剪-在处理相机或相册返回时可以调用"><a href="#图片裁剪-在处理相机或相册返回时可以调用" class="headerlink" title="图片裁剪(在处理相机或相册返回时可以调用)"></a>图片裁剪(在处理相机或相册返回时可以调用)</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">startCut</span><span class="params">(Uri path)</span> </span>&#123;</div><div class="line">    Intent intent = <span class="keyword">new</span> Intent(<span class="string">"com.android.camera.action.CROP"</span>);</div><div class="line">    intent.setDataAndType(path, <span class="string">"image/*"</span>);</div><div class="line">    intent.putExtra(<span class="string">"crop"</span>, <span class="string">"true"</span>);</div><div class="line">    <span class="comment">// aspectX aspectY 是宽高的比例</span></div><div class="line">    intent.putExtra(<span class="string">"aspectX"</span>, <span class="number">4</span>);</div><div class="line">    intent.putExtra(<span class="string">"aspectY"</span>, <span class="number">4</span>);</div><div class="line">    <span class="comment">// outputX outputY 是裁剪图片宽高</span></div><div class="line">    intent.putExtra(<span class="string">"outputX"</span>, <span class="number">300</span>);</div><div class="line">    intent.putExtra(<span class="string">"outputY"</span>, <span class="number">300</span>);</div><div class="line">    <span class="comment">//裁剪完成的图片有可能会出现黑边，添加以下两个参数即可</span></div><div class="line">    intent.putExtra(<span class="string">"scale"</span>, <span class="literal">true</span>);<span class="comment">//黑边</span></div><div class="line">    intent.putExtra(<span class="string">"scaleUpIfNeeded"</span>, <span class="literal">true</span>);<span class="comment">//黑边</span></div><div class="line">    intent.putExtra(<span class="string">"return-data"</span>, <span class="literal">true</span>);</div><div class="line">    startActivityForResult(intent, PHOTO_CUT_CODE);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="设置TextView显示一行超过部分以-显示"><a href="#设置TextView显示一行超过部分以-显示" class="headerlink" title="设置TextView显示一行超过部分以..显示"></a>设置TextView显示一行超过部分以..显示</h3><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">android:</span>ellipsize=<span class="string">"marquee"</span></div><div class="line"><span class="symbol">android:</span>maxEms=<span class="string">"10"</span></div><div class="line"><span class="symbol">android:</span>lines=<span class="string">"1"</span></div></pre></td></tr></table></figure>
-<h3 id="设置失效时，原因是超过的首要校验条件是TextView布局的宽度，如果是match-parent并且很宽的话，该效果会“失效”"><a href="#设置失效时，原因是超过的首要校验条件是TextView布局的宽度，如果是match-parent并且很宽的话，该效果会“失效”" class="headerlink" title="设置失效时，原因是超过的首要校验条件是TextView布局的宽度，如果是match_parent并且很宽的话，该效果会“失效”"></a>设置失效时，原因是超过的首要校验条件是TextView布局的宽度，如果是match_parent并且很宽的话，该效果会“失效”</h3><h3 id="设置文本2行显示，多出部分省略号"><a href="#设置文本2行显示，多出部分省略号" class="headerlink" title="设置文本2行显示，多出部分省略号"></a>设置文本2行显示，多出部分省略号</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">tv_content</span><span class="selector-class">.setMaxLines</span>(2);</div><div class="line"><span class="selector-tag">tv_content</span><span class="selector-class">.setEllipsize</span>(<span class="selector-tag">TextUtils</span><span class="selector-class">.TruncateAt</span><span class="selector-class">.END</span>);</div></pre></td></tr></table></figure>
+<p>设置失效时，原因是超过的首要校验条件是TextView布局的宽度，如果是match_parent并且很宽的话，该效果会“失效”</p>
+<h3 id="设置文本2行显示，多出部分省略号"><a href="#设置文本2行显示，多出部分省略号" class="headerlink" title="设置文本2行显示，多出部分省略号"></a>设置文本2行显示，多出部分省略号</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">tv_content</span><span class="selector-class">.setMaxLines</span>(2);</div><div class="line"><span class="selector-tag">tv_content</span><span class="selector-class">.setEllipsize</span>(<span class="selector-tag">TextUtils</span><span class="selector-class">.TruncateAt</span><span class="selector-class">.END</span>);</div></pre></td></tr></table></figure>
 <h3 id="刷新ListView"><a href="#刷新ListView" class="headerlink" title="刷新ListView"></a>刷新ListView</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">adapter.notifyDataSetChanged()<span class="comment">;</span></div></pre></td></tr></table></figure>
 
       
@@ -533,7 +567,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -555,7 +589,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -658,7 +692,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#学习Android过程中的一些笔记"><span class="nav-number">1.</span> <span class="nav-text">学习Android过程中的一些笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TextView粗体"><span class="nav-number">1.1.</span> <span class="nav-text">TextView粗体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关掉所要到的界面中间的activity"><span class="nav-number">1.2.</span> <span class="nav-text">关掉所要到的界面中间的activity</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinearLayout点击变换背景颜色"><span class="nav-number">1.3.</span> <span class="nav-text">LinearLayout点击变换背景颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ListView嵌套ListView-itemClick失效"><span class="nav-number">1.4.</span> <span class="nav-text">ListView嵌套ListView,itemClick失效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#取消子ListView控件的焦点"><span class="nav-number">1.5.</span> <span class="nav-text">取消子ListView控件的焦点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置透明度"><span class="nav-number">1.6.</span> <span class="nav-text">设置透明度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#去除Button边框阴影"><span class="nav-number">1.7.</span> <span class="nav-text">去除Button边框阴影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三星机型调用系统相机后，会出现自动旋转照片的问题，详细解决方法"><span class="nav-number">1.8.</span> <span class="nav-text">三星机型调用系统相机后，会出现自动旋转照片的问题，详细解决方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对于开关按钮，不建议设置禁止双击，可能会出现实际状态和按钮状态不符问题"><span class="nav-number">1.9.</span> <span class="nav-text">对于开关按钮，不建议设置禁止双击，可能会出现实际状态和按钮状态不符问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#singleLine过时替代"><span class="nav-number">1.10.</span> <span class="nav-text">singleLine过时替代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#button默认英文大写"><span class="nav-number">1.11.</span> <span class="nav-text">button默认英文大写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决ListView的item点击失效问题"><span class="nav-number">1.12.</span> <span class="nav-text">解决ListView的item点击失效问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决ScrollView嵌套ListView运行后最先显示出来的位置不在顶部而是中间问题"><span class="nav-number">1.13.</span> <span class="nav-text">解决ScrollView嵌套ListView运行后最先显示出来的位置不在顶部而是中间问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#状态栏设置"><span class="nav-number">1.14.</span> <span class="nav-text">状态栏设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TextView文字颜色无法设置"><span class="nav-number">1.15.</span> <span class="nav-text">TextView文字颜色无法设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#include引入toolbar不显示，或出现空指针情况"><span class="nav-number">1.16.</span> <span class="nav-text">include引入toolbar不显示，或出现空指针情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置小键盘回车按钮"><span class="nav-number">1.17.</span> <span class="nav-text">设置小键盘回车按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android去除EditView自动焦点获取"><span class="nav-number">1.18.</span> <span class="nav-text">Android去除EditView自动焦点获取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Error-Execution-failed-for-task-‘-student-processDebugManifest’"><span class="nav-number">1.19.</span> <span class="nav-text">Error:Execution failed for task ‘:student:processDebugManifest’.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ImageView图片显示不全可将属性调整如下"><span class="nav-number">1.20.</span> <span class="nav-text">ImageView图片显示不全可将属性调整如下</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防止dialog窗体泄露-WindowLeaked"><span class="nav-number">1.21.</span> <span class="nav-text">防止dialog窗体泄露(WindowLeaked)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置适配屏幕-当自己的标题栏被顶部状态栏覆盖时使用"><span class="nav-number">1.22.</span> <span class="nav-text">设置适配屏幕(当自己的标题栏被顶部状态栏覆盖时使用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PullToRefreshListView的layout-width、layout-height属性必须是match-parent，否则数据将无法显示"><span class="nav-number">1.23.</span> <span class="nav-text">PullToRefreshListView的layout_width、layout_height属性必须是match_parent，否则数据将无法显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏软键盘"><span class="nav-number">1.24.</span> <span class="nav-text">隐藏软键盘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DatePicker日期控件设置不可输入"><span class="nav-number">1.25.</span> <span class="nav-text">DatePicker日期控件设置不可输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置按钮不可点击"><span class="nav-number">1.26.</span> <span class="nav-text">设置按钮不可点击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#包名不一致：系统会认为是个新的软件，这就不算升级了"><span class="nav-number">1.27.</span> <span class="nav-text">包名不一致：系统会认为是个新的软件，这就不算升级了</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小提示框"><span class="nav-number">1.28.</span> <span class="nav-text">小提示框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动service"><span class="nav-number">1.29.</span> <span class="nav-text">启动service</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#若从图库选择照片错误，路径不对"><span class="nav-number">1.30.</span> <span class="nav-text">若从图库选择照片错误，路径不对</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏EditText中的下划线"><span class="nav-number">1.31.</span> <span class="nav-text">隐藏EditText中的下划线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片裁剪-在处理相机或相册返回时可以调用"><span class="nav-number">1.32.</span> <span class="nav-text">图片裁剪(在处理相机或相册返回时可以调用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置TextView显示一行超过部分以-显示"><span class="nav-number">1.33.</span> <span class="nav-text">设置TextView显示一行超过部分以..显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置失效时，原因是超过的首要校验条件是TextView布局的宽度，如果是match-parent并且很宽的话，该效果会“失效”"><span class="nav-number">1.34.</span> <span class="nav-text">设置失效时，原因是超过的首要校验条件是TextView布局的宽度，如果是match_parent并且很宽的话，该效果会“失效”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置文本2行显示，多出部分省略号"><span class="nav-number">1.35.</span> <span class="nav-text">设置文本2行显示，多出部分省略号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#刷新ListView"><span class="nav-number">1.36.</span> <span class="nav-text">刷新ListView</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#学习Android过程中的一些笔记"><span class="nav-number">1.</span> <span class="nav-text">学习Android过程中的一些笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TextView粗体"><span class="nav-number">1.1.</span> <span class="nav-text">TextView粗体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关掉所要到的界面中间的activity"><span class="nav-number">1.2.</span> <span class="nav-text">关掉所要到的界面中间的activity</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinearLayout点击变换背景颜色"><span class="nav-number">1.3.</span> <span class="nav-text">LinearLayout点击变换背景颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ListView嵌套ListView-itemClick失效"><span class="nav-number">1.4.</span> <span class="nav-text">ListView嵌套ListView,itemClick失效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#取消子ListView控件的焦点"><span class="nav-number">1.5.</span> <span class="nav-text">取消子ListView控件的焦点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置透明度"><span class="nav-number">1.6.</span> <span class="nav-text">设置透明度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#去除Button边框阴影"><span class="nav-number">1.7.</span> <span class="nav-text">去除Button边框阴影</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三星机型调用系统相机后，会出现自动旋转照片的问题，详细解决方法"><span class="nav-number">1.8.</span> <span class="nav-text">三星机型调用系统相机后，会出现自动旋转照片的问题，详细解决方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对于开关按钮，不建议设置禁止双击，可能会出现实际状态和按钮状态不符问题"><span class="nav-number">1.9.</span> <span class="nav-text">对于开关按钮，不建议设置禁止双击，可能会出现实际状态和按钮状态不符问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#singleLine过时替代"><span class="nav-number">1.10.</span> <span class="nav-text">singleLine过时替代</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#button默认英文大写"><span class="nav-number">1.11.</span> <span class="nav-text">button默认英文大写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决ListView的item点击失效问题"><span class="nav-number">1.12.</span> <span class="nav-text">解决ListView的item点击失效问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决ScrollView嵌套ListView运行后最先显示出来的位置不在顶部而是中间问题"><span class="nav-number">1.13.</span> <span class="nav-text">解决ScrollView嵌套ListView运行后最先显示出来的位置不在顶部而是中间问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#状态栏设置"><span class="nav-number">1.14.</span> <span class="nav-text">状态栏设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TextView文字颜色无法设置"><span class="nav-number">1.15.</span> <span class="nav-text">TextView文字颜色无法设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#include引入toolbar不显示，或出现空指针情况"><span class="nav-number">1.16.</span> <span class="nav-text">include引入toolbar不显示，或出现空指针情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置小键盘回车按钮"><span class="nav-number">1.17.</span> <span class="nav-text">设置小键盘回车按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android去除EditView自动焦点获取"><span class="nav-number">1.18.</span> <span class="nav-text">Android去除EditView自动焦点获取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ImageView图片显示不全可将属性调整如下"><span class="nav-number">1.19.</span> <span class="nav-text">ImageView图片显示不全可将属性调整如下</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防止dialog窗体泄露-WindowLeaked"><span class="nav-number">1.20.</span> <span class="nav-text">防止dialog窗体泄露(WindowLeaked)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置适配屏幕-当自己的标题栏被顶部状态栏覆盖时使用"><span class="nav-number">1.21.</span> <span class="nav-text">设置适配屏幕(当自己的标题栏被顶部状态栏覆盖时使用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PullToRefreshListView的layout-width、layout-height属性必须是match-parent，否则数据将无法显示"><span class="nav-number">1.22.</span> <span class="nav-text">PullToRefreshListView的layout_width、layout_height属性必须是match_parent，否则数据将无法显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏软键盘"><span class="nav-number">1.23.</span> <span class="nav-text">隐藏软键盘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DatePicker日期控件设置不可输入"><span class="nav-number">1.24.</span> <span class="nav-text">DatePicker日期控件设置不可输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置按钮不可点击"><span class="nav-number">1.25.</span> <span class="nav-text">设置按钮不可点击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#包名与签名"><span class="nav-number">1.26.</span> <span class="nav-text">包名与签名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小提示框"><span class="nav-number">1.27.</span> <span class="nav-text">小提示框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动service"><span class="nav-number">1.28.</span> <span class="nav-text">启动service</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#若从图库选择照片错误，路径不对"><span class="nav-number">1.29.</span> <span class="nav-text">若从图库选择照片错误，路径不对</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏EditText中的下划线"><span class="nav-number">1.30.</span> <span class="nav-text">隐藏EditText中的下划线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片裁剪-在处理相机或相册返回时可以调用"><span class="nav-number">1.31.</span> <span class="nav-text">图片裁剪(在处理相机或相册返回时可以调用)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置TextView显示一行超过部分以-显示"><span class="nav-number">1.32.</span> <span class="nav-text">设置TextView显示一行超过部分以..显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置文本2行显示，多出部分省略号"><span class="nav-number">1.33.</span> <span class="nav-text">设置文本2行显示，多出部分省略号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#刷新ListView"><span class="nav-number">1.34.</span> <span class="nav-text">刷新ListView</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -716,6 +750,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -845,6 +881,323 @@
 
 
   
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
