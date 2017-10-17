@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[浏览器插件]]></title>
+    <url>%2F2017%2F10%2F17%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[下载扩展程序 Markdown Here以Markdown转换文字 Octotree树形目录显示GitHub项目文件，github地址 Adblock Plus广告过滤]]></content>
+      <tags>
+        <tag>谷歌浏览器</tag>
+        <tag>Chrome扩展程序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Vim使用文档]]></title>
     <url>%2F2017%2F10%2F16%2FVim%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%2F</url>
     <content type="text"><![CDATA[Vim命令保存:w 另存为newName:w newName 退出:q 保存并退出 :wq 不保存直接退出 :q! 进入编辑模式i 退出编辑模式ESC 撤回u 重复前一个操作. 显示行号:set nu 取消行号:set nonu 移动到文档开头gg 移动到文档结尾G 移动到第n行nG 光标向右移动n个字符n空格 光标向下移动n行n回车 复制光标所在行yy 复制从光标所在行向下的n行nyy 粘贴至光标之后p 小写 粘贴至光标之前P 大写 删除光标之后的一个字符x 小写 删除光标之前的一个字符X 大写 剪切光标所在行dd 剪切光标所在行向下的n行ndd 搜索/内容 替换操作s代表每行第一个，g代表每行所有，%代表所有行，^代表开头，$代表结尾:%s/^/select/g 在每行最开始添加select:11,$s/a/b/ 把11行至最后一行中，每行的第一个a替换为b:1,6s/a/b/g 把第1行至第6行中所有的a替换为b:%s/a/b/g 将所有的a替换为b|]]></content>
