@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="My Project">
 <meta property="og:description" content="名词 localStorage Executors TDD  浅谈测试驱动开发  学习TDD：TDD的好处 Redis IOC">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-16T07:09:17.116Z">
+<meta property="og:updated_time" content="2017-10-17T01:45:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java题集">
 <meta name="twitter:description" content="名词 localStorage Executors TDD  浅谈测试驱动开发  学习TDD：TDD的好处 Redis IOC">
@@ -215,6 +215,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-音乐">
+          <a href="/music/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-music"></i> <br />
+            
+            音乐
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
@@ -291,16 +301,16 @@
  </div>
     </header>
 
-			<object type="application/x-shockwave-flash"
-			style="outline:none;position: absolute;position: fixed;right: 0;bottom:0;margin-bottom: 80px;margin-right:5px;" 
-			data="http://cdn.abowman.com/widgets/hamster/hamster.swf?" 
-			width="180" height="140" 
-			id="__wow_video_player__463292481" 
-			title="Adobe Flash Player">
-			<param name="movie" value="http://cdn.abowman.com/widgets/hamster/hamster.swf?">
-			<param name="AllowScriptAccess" value="always">
-			<param name="wmode" value="opaque">
-			</object>
+    <object type="application/x-shockwave-flash"
+            style="outline:none;position: absolute;position: fixed;right: 0;bottom:0;margin-bottom: 80px;margin-right:5px;" 
+            data="http://cdn.abowman.com/widgets/hamster/hamster.swf?" 
+            width="180" height="140" 
+            id="__wow_video_player__463292481" 
+            title="Adobe Flash Player">
+        <param name="movie" value="http://cdn.abowman.com/widgets/hamster/hamster.swf?">
+        <param name="AllowScriptAccess" value="always">
+        <param name="wmode" value="opaque">
+    </object>
 	
     <main id="main" class="main">
       <div class="main-inner">
@@ -438,7 +448,34 @@
 <p>优化之后，我们将返回的字符串默认值为0，这样我们的循环变量从1开始，只需要在其前面拼接+号即可，这样就会避免多出+号的问题了。</p>
 <h3 id="替换空格"><a href="#替换空格" class="headerlink" title="替换空格"></a>替换空格</h3><p>实现以下函数，将一个字符串中的空格替换为%20<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace</span><span class="params">(StringBuffer str)</span></span>&#123;</div><div class="line">  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>解题思路：由于传入参数是StringBuffer，而StringBuffer并没有可以直接替换某个字符的方法，所以我们需要先将StringBuffer转换为String，调研String的replace方法即可<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace</span><span class="params">(StringBuffer str)</span></span>&#123;</div><div class="line">  <span class="keyword">return</span> str.toString().replace(<span class="string">" "</span>,<span class="string">"%20"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-
+<h3 id="静态变量只能在类主体中定义，不能在方法中定义"><a href="#静态变量只能在类主体中定义，不能在方法中定义" class="headerlink" title="静态变量只能在类主体中定义，不能在方法中定义"></a>静态变量只能在类主体中定义，不能在方法中定义</h3><ul>
+<li>以下代码会编译错误<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">aMethod</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="keyword">static</span> <span class="keyword">int</span> i = <span class="number">0</span>;</div><div class="line">        i++;</div><div class="line">        <span class="keyword">return</span> i;</div><div class="line">    &#125;</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</div><div class="line">    Test test = <span class="keyword">new</span> Test();</div><div class="line">    test.aMethod();</div><div class="line">    <span class="keyword">int</span> j = test.aMethod();</div><div class="line">    System.out.println(j);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="接口中默认权限是public，所以实现接口后重写的方法也只能是public"><a href="#接口中默认权限是public，所以实现接口后重写的方法也只能是public" class="headerlink" title="接口中默认权限是public，所以实现接口后重写的方法也只能是public"></a>接口中默认权限是public，所以实现接口后重写的方法也只能是public</h3><ul>
+<li>如果一个接口Cow有个方法drink()，有个类Calf实现接口Cow，则在类Calf中正确的是？ <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">drink</span><span class="params">()</span></span>&#123;...&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="封装类型，引用和实例，题一"><a href="#封装类型，引用和实例，题一" class="headerlink" title="封装类型，引用和实例，题一"></a>封装类型，引用和实例，题一</h3><ul>
+<li><p>以下代码输出结果是什么？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Two</span></span>&#123;</div><div class="line">    Byte x;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">PassO</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">        PassO p=<span class="keyword">new</span> PassO();</div><div class="line">        p.start();</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">start</span><span class="params">()</span></span>&#123;</div><div class="line">        Two t=<span class="keyword">new</span> Two();</div><div class="line">        System.out.print(t.x+””);</div><div class="line">        Two t2=fix(t);</div><div class="line">        System.out.print(t.x+” ” +t2.x);</div><div class="line">    &#125;</div><div class="line">    <span class="function">Two <span class="title">fix</span><span class="params">(Two tt)</span></span>&#123;</div><div class="line">        tt.x=<span class="number">42</span>;</div><div class="line">        <span class="keyword">return</span> tt;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>一开始我以为输出结果是<code>null null 42</code>，但是实际结果是<code>null 42 42</code></p>
+<blockquote>
+<p>解析：</p>
+<ul>
+<li>首先Two类中的<code>x</code>类型是封装类，默认值为null，所以第一次输出的<code>t.x</code>是null</li>
+<li>注意<code>t2</code>，是通过fix方法获取的，而fix方法返回的实例实际上就是传入的<code>t</code>引用指向的实例<br>那么就有以下结论：<ul>
+<li><code>t</code>,<code>tt</code>,<code>t2</code>三个引用指向同一个实例对象</li>
+<li><code>t.x = t2.x = tt.x = 42</code></li>
+</ul>
+</li>
+<li>最后输出<code>null 42 42</code></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3>
       
     </div>
     
@@ -652,15 +689,11 @@
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.codewars.com" title="代码大战" target="_blank">代码大战</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://www.zdfans.com/" title="良心的下载站" target="_blank">良心的下载站</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
                     <a href="https://portal.qiniu.com/" title="七牛云存储" target="_blank">七牛云存储</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.nowcoder.com/" title="牛客网" target="_blank">牛客网</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
@@ -674,6 +707,7 @@
           
 
         </div>
+        
       </section>
 
       
@@ -686,7 +720,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#名词"><span class="nav-text">名词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同"><span class="nav-text">软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能"><span class="nav-text">冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给定一个数字，计算出从0开始到该数字内所有数字之和。"><span class="nav-text">给定一个数字，计算出从0开始到该数字内所有数字之和。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换空格"><span class="nav-text">替换空格</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#名词"><span class="nav-text">名词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同"><span class="nav-text">软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能"><span class="nav-text">冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给定一个数字，计算出从0开始到该数字内所有数字之和。"><span class="nav-text">给定一个数字，计算出从0开始到该数字内所有数字之和。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换空格"><span class="nav-text">替换空格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#静态变量只能在类主体中定义，不能在方法中定义"><span class="nav-text">静态变量只能在类主体中定义，不能在方法中定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#接口中默认权限是public，所以实现接口后重写的方法也只能是public"><span class="nav-text">接口中默认权限是public，所以实现接口后重写的方法也只能是public</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封装类型，引用和实例，题一"><span class="nav-text">封装类型，引用和实例，题一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-text">1</span></a></li></ol></div>
             
 
           </div>
