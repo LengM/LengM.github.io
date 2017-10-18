@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Git使用文档]]></title>
+    <url>%2F2017%2F10%2F18%2FGit%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%2F</url>
+    <content type="text"><![CDATA[查看配置1git config -l 或者直接进入.git文件夹查看config文件 修改远程仓库地址直接修改.git文件夹中的config即可 如何拉取远程仓库的新分支 比如这里我们要拉取新的dev分支，那么首先在本地创建一个dev分支，并切换dev分支 1git checkout -b dev 接下来直接使用命令拉取dev分支即可 1git pull origin dev]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java运算符优先级]]></title>
+    <url>%2F2017%2F10%2F18%2FJava%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7%2F</url>
+    <content type="text"><![CDATA[第一级（最高） . 点 () 圆括号 [] 方括号 第二级 + 正号 - 负号 ++ 自增 -- 自减 ~ 按位非 ! 逻辑非 第三级 * 乘 / 除 % 取余 第四级 + 加 - 减 第五级 &lt;&lt; 左移运算 &gt;&gt; 带符号右移运算 &gt;&gt;&gt; 无符号右移 第六级 &lt; 小于 &lt;= 小于等于 &gt; 大于 &gt;- 大于等于 instanceof 确定某对象是否属于指定的类 第七级 == 等于 != 不等于 第八级 &amp; 按位与 第九级 | 按位或 第十级 ^ 按位异或 第十一级 &amp;&amp; 短路与 第十二级 || 短路或 第十三级 ?: 三目(条件)运算 第十四级（最低） = 赋值运算 混合赋值运算符，例如+=,-=,/=,*=…等等]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[我的音乐选集]]></title>
     <url>%2F2017%2F10%2F17%2F%E6%88%91%E7%9A%84%E9%9F%B3%E4%B9%90%E9%80%89%E9%9B%86%2F</url>
     <content type="text"><![CDATA[网易云的一些歌单 纯音乐精选 中文精选 英语精选 花儿与少年第三季 动漫]]></content>
@@ -15,6 +37,9 @@
     <title><![CDATA[浏览器插件]]></title>
     <url>%2F2017%2F10%2F17%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[下载扩展程序 Markdown Here以Markdown转换文字 Octotree树形目录显示GitHub项目文件，github地址 Adblock Plus广告过滤]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
       <tags>
         <tag>谷歌浏览器</tag>
         <tag>Chrome扩展程序</tag>
@@ -108,7 +133,7 @@
   <entry>
     <title><![CDATA[Windows的使用]]></title>
     <url>%2F2017%2F10%2F13%2FWindows%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
-    <content type="text"><![CDATA[自动关机命令1shutdown -s -t 7200 取消关机命令 1showdown -a 时间单位为秒 隐藏某文件:1attrib +s +a +h +r d:\demo.jpg +r或-r [文件名] 设置文件属性是否为只读 +h或-h [文件名] 设置文件属性是否隐含 +s或-s [文件名] 设置文件属性是否为系统文件 +a或-a [文件名] 设置文件属性是否为归档文件 windows下安装msi报错（2502、2503） 以管理员身份运行cmd 输入命令1msiexec /package 安装文件的绝对路径]]></content>
+    <content type="text"><![CDATA[自动关机命令1shutdown -s -t 7200 取消关机命令 1showdown -a 时间单位为秒 隐藏某文件1attrib +s +a +h +r d:\demo.jpg +r或-r [文件名] 设置文件属性是否为只读 +h或-h [文件名] 设置文件属性是否隐含 +s或-s [文件名] 设置文件属性是否为系统文件 +a或-a [文件名] 设置文件属性是否为归档文件 windows下安装msi报错（2502、2503） 以管理员身份运行cmd 输入命令1msiexec /package 安装文件的绝对路径]]></content>
       <categories>
         <category>技术</category>
       </categories>
@@ -130,7 +155,7 @@
   <entry>
     <title><![CDATA[Java题集]]></title>
     <url>%2F2017%2F10%2F12%2FJava%E9%A2%98%E9%9B%86%2F</url>
-    <content type="text"><![CDATA[名词 localStorage Executors TDD 浅谈测试驱动开发 学习TDD：TDD的好处 Redis IOC 软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同 冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能123456789101112void bubbleSort(int[] a)&#123; // a为需要排序的数组 for (int i = 0; i &lt; a.length - 1; i++) &#123; for (int j = 0; j &lt; a.length - i - 1; j++) &#123; if (a[j] &gt; a[j + 1]) &#123; int t = a[j]; a[j] = a[j + 1]; a[j + 1] = t; &#125; &#125; &#125;&#125; 给定一个数字，计算出从0开始到该数字内所有数字之和。 传入-5,输出-5&lt;0 传入0,输出0=0 传入6,输出0+1+2+3+4+5+6=21 我的解决方法：123456789101112131415private String sumNum(int i) &#123; if (i &lt; 0) &#123; return i + " &lt; 0"; &#125; else if (i == 0) &#123; return i + " = 0"; &#125; else &#123; int sum = 0; StringBuilder sout = new StringBuilder(); for (int j = 0; j &lt;= i; j++) &#123; sum += j; sout.append(j).append("+"); &#125; return sout.toString().substring(0, sout.length() - 1) + " = " + sum; &#125;&#125; 一开始自己选择循环变量从0开始，也是陷入了输出结果的误区（从0开始，在其后面拼接+号），在拼接字符串时最后就会多出一个+号，需要手动截取字符串，变得很麻烦优化后更好的解决方法：123456789101112131415private String sumNum(int i) &#123; if (i &lt; 0) &#123; return i + " &lt; 0"; &#125; else if (i == 0) &#123; return i + " = 0"; &#125; else &#123; int sum = 0; StringBuilder sb = new StringBuilder("0"); for (int j = 1; j &lt;= i; j++) &#123; sum += j; sb.append("+").append(j); &#125; return sb.append("=").append(sum).toString(); &#125;&#125; 优化之后，我们将返回的字符串默认值为0，这样我们的循环变量从1开始，只需要在其前面拼接+号即可，这样就会避免多出+号的问题了。 替换空格实现以下函数，将一个字符串中的空格替换为%20123public String replaceSpace(StringBuffer str)&#123; &#125; 解题思路：由于传入参数是StringBuffer，而StringBuffer并没有可以直接替换某个字符的方法，所以我们需要先将StringBuffer转换为String，调研String的replace方法即可123public String replaceSpace(StringBuffer str)&#123; return str.toString().replace(" ","%20");&#125; 静态变量只能在类主体中定义，不能在方法中定义 以下代码会编译错误12345678910111213public class Test &#123; public int aMethod()&#123; static int i = 0; i++; return i; &#125;public static void main(String args[])&#123; Test test = new Test(); test.aMethod(); int j = test.aMethod(); System.out.println(j); &#125;&#125; 接口中默认权限是public，所以实现接口后重写的方法也只能是public 如果一个接口Cow有个方法drink()，有个类Calf实现接口Cow，则在类Calf中正确的是？ 1public void drink()&#123;...&#125; 封装类型，引用和实例，题一 以下代码输出结果是什么？ 12345678910111213141516171819class Two&#123; Byte x;&#125;class PassO&#123; public static void main(String[] args)&#123; PassO p=new PassO(); p.start(); &#125; void start()&#123; Two t=new Two(); System.out.print(t.x+””); Two t2=fix(t); System.out.print(t.x+” ” +t2.x); &#125; Two fix(Two tt)&#123; tt.x=42; return tt; &#125;&#125; 一开始我以为输出结果是null null 42，但是实际结果是null 42 42 解析： 首先Two类中的x类型是封装类，默认值为null，所以第一次输出的t.x是null 注意t2，是通过fix方法获取的，而fix方法返回的实例实际上就是传入的t引用指向的实例那么就有以下结论： t,tt,t2三个引用指向同一个实例对象 t.x = t2.x = tt.x = 42 最后输出null 42 42 1]]></content>
+    <content type="text"><![CDATA[名词 localStorage Executors TDD 浅谈测试驱动开发 学习TDD：TDD的好处 Redis IOC 软件工程中最经典的软件过程模型是瀑布模型，请列出瀑布模型依次包含哪几个阶段，并简述敏捷开发和传统开发过程的不同 冒泡排序是排序中常用的算法，请用java语法实现bubbleSort函数的功能123456789101112void bubbleSort(int[] a)&#123; // a为需要排序的数组 for (int i = 0; i &lt; a.length - 1; i++) &#123; for (int j = 0; j &lt; a.length - i - 1; j++) &#123; if (a[j] &gt; a[j + 1]) &#123; int t = a[j]; a[j] = a[j + 1]; a[j + 1] = t; &#125; &#125; &#125;&#125; 给定一个数字，计算出从0开始到该数字内所有数字之和。 传入-5,输出-5&lt;0 传入0,输出0=0 传入6,输出0+1+2+3+4+5+6=21 我的解决方法：123456789101112131415private String sumNum(int i) &#123; if (i &lt; 0) &#123; return i + " &lt; 0"; &#125; else if (i == 0) &#123; return i + " = 0"; &#125; else &#123; int sum = 0; StringBuilder sout = new StringBuilder(); for (int j = 0; j &lt;= i; j++) &#123; sum += j; sout.append(j).append("+"); &#125; return sout.toString().substring(0, sout.length() - 1) + " = " + sum; &#125;&#125; 一开始自己选择循环变量从0开始，也是陷入了输出结果的误区（从0开始，在其后面拼接+号），在拼接字符串时最后就会多出一个+号，需要手动截取字符串，变得很麻烦优化后更好的解决方法：123456789101112131415private String sumNum(int i) &#123; if (i &lt; 0) &#123; return i + " &lt; 0"; &#125; else if (i == 0) &#123; return i + " = 0"; &#125; else &#123; int sum = 0; StringBuilder sb = new StringBuilder("0"); for (int j = 1; j &lt;= i; j++) &#123; sum += j; sb.append("+").append(j); &#125; return sb.append("=").append(sum).toString(); &#125;&#125; 优化之后，我们将返回的字符串默认值为0，这样我们的循环变量从1开始，只需要在其前面拼接+号即可，这样就会避免多出+号的问题了。 替换空格实现以下函数，将一个字符串中的空格替换为%20123public String replaceSpace(StringBuffer str)&#123; &#125; 解题思路：由于传入参数是StringBuffer，而StringBuffer并没有可以直接替换某个字符的方法，所以我们需要先将StringBuffer转换为String，调研String的replace方法即可123public String replaceSpace(StringBuffer str)&#123; return str.toString().replace(" ","%20");&#125; 静态变量只能在类主体中定义，不能在方法中定义 以下代码会编译错误12345678910111213public class Test &#123; public int aMethod()&#123; static int i = 0; i++; return i; &#125;public static void main(String args[])&#123; Test test = new Test(); test.aMethod(); int j = test.aMethod(); System.out.println(j); &#125;&#125; 接口中默认权限是public，所以实现接口后重写的方法也只能是public 如果一个接口Cow有个方法drink()，有个类Calf实现接口Cow，则在类Calf中正确的是？ 1public void drink()&#123;...&#125; 封装类型，引用和实例，题一 以下代码输出结果是什么？ 12345678910111213141516171819class Two&#123; Byte x;&#125;class PassO&#123; public static void main(String[] args)&#123; PassO p=new PassO(); p.start(); &#125; void start()&#123; Two t=new Two(); System.out.print(t.x+””); Two t2=fix(t); System.out.print(t.x+” ” +t2.x); &#125; Two fix(Two tt)&#123; tt.x=42; return tt; &#125;&#125; 一开始我以为输出结果是null null 42，但是实际结果是null 42 42 解析： 首先Two类中的x类型是封装类，默认值为null，所以第一次输出的t.x是null 注意t2，是通过fix方法获取的，而fix方法返回的实例实际上就是传入的t引用指向的实例那么就有以下结论： t,tt,t2三个引用指向同一个实例对象 t.x = t2.x = tt.x = 42 最后输出null 42 42 运算符优先级 以下代码输出结果是什么？ 123int x = 10;int y = x += x -= x - 10;System.out.println(y); 输出结果为20 在这里，-运算的优先级最高，其次才是+=和-= 计算x - 10，结果为0 计算x += x结果为20 计算20 -= 0结果为20]]></content>
       <categories>
         <category>技术</category>
       </categories>
