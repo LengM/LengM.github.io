@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[Git使用文档]]></title>
     <url>%2F2017%2F10%2F18%2FGit%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%2F</url>
-    <content type="text"><![CDATA[查看配置1git config -l 或者直接进入.git文件夹查看config文件 修改远程仓库地址直接修改.git文件夹中的config即可 如何拉取远程仓库的新分支 比如这里我们要拉取新的dev分支，那么首先在本地创建一个dev分支，并切换dev分支 1git checkout -b dev 接下来直接使用命令拉取dev分支即可 1git pull origin dev]]></content>
+    <content type="text"><![CDATA[查看配置1git config -l 或者直接进入.git文件夹查看config文件 修改远程仓库地址直接修改.git文件夹中的config即可 如何拉取远程仓库的新分支 比如这里我们要拉取新的dev分支，那么首先在本地创建一个dev分支，并切换dev分支 1git checkout -b dev 接下来直接使用命令拉取dev分支即可 1git pull origin dev 删除最后一次提交12git revert HEADgit push origin master revert是放弃指定提交的修改，生成一次新的提交]]></content>
       <categories>
         <category>技术</category>
       </categories>
